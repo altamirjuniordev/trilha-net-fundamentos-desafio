@@ -62,22 +62,22 @@ namespace DesafioFundamentos.Models
             }
         }
 
-        public void ListarVeiculos()
+        public void ListarVeiculos()  // metodoPublico
         {
             // Verifica se há veículos no estacionamento
-            if (veiculos.Any())
+            if (veiculos.Any())     // se (lista.Algum)
             {
-                Console.WriteLine("Os veículos estacionados são:");
+                Console.WriteLine("Os veículos estacionados são:");     // mensagem
                 // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
-                for (int contador = 0; contador < veiculos.Count; contador++ )
+                for (int contador = 0; contador < veiculos.Count; contador++ )    // repeticaoFor (tipo contador recebe 0; condicao;)
                 {
-                    Console.WriteLine($"Veículo {contador}: {veiculos[contador] }"
-                    );
+                    int quantidade = contador + 1;     // ajustar o contador para quantidade
+                    Console.WriteLine($"Veículo {quantidade}: {veiculos[contador] }");     // mensagem
                 }
             }
             else
             {
-                Console.WriteLine("Não há veículos estacionados.");
+                Console.WriteLine("Não há veículos estacionados.");     // mensagens
             }
         }
     }
